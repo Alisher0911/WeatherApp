@@ -16,10 +16,10 @@
 		7489031A25D3DA27009DB757 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7489031825D3DA27009DB757 /* LaunchScreen.storyboard */; };
 		7489032225D3E7F9009DB757 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7489032125D3E7F9009DB757 /* Constants.swift */; };
 		7489032425D3E81E009DB757 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7489032325D3E81E009DB757 /* Model.swift */; };
-		749E7F8125E24524002C0272 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 749E7F7F25E24524002C0272 /* CollectionViewCell.xib */; };
-		749E7F8225E24524002C0272 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749E7F8025E24524002C0272 /* CollectionViewCell.swift */; };
-		749E7F8525E24530002C0272 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 749E7F8325E24530002C0272 /* TableViewCell.xib */; };
-		749E7F8625E24530002C0272 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749E7F8425E24530002C0272 /* TableViewCell.swift */; };
+		749E7F8925E27FE8002C0272 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749E7F8725E27FE8002C0272 /* MyCollectionViewCell.swift */; };
+		749E7F8A25E27FE8002C0272 /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 749E7F8825E27FE8002C0272 /* MyCollectionViewCell.xib */; };
+		749E7F8F25E289F7002C0272 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749E7F8D25E289F7002C0272 /* MyTableViewCell.swift */; };
+		749E7F9025E289F7002C0272 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 749E7F8E25E289F7002C0272 /* MyTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,10 +33,10 @@
 		7489031B25D3DA27009DB757 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7489032125D3E7F9009DB757 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7489032325D3E81E009DB757 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		749E7F7F25E24524002C0272 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CollectionViewCell.xib; path = ../../../../../Downloads/lecture8/lecture8/cells/CollectionViewCell.xib; sourceTree = "<group>"; };
-		749E7F8025E24524002C0272 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewCell.swift; path = ../../../../../Downloads/lecture8/lecture8/cells/CollectionViewCell.swift; sourceTree = "<group>"; };
-		749E7F8325E24530002C0272 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TableViewCell.xib; path = ../../../../../Downloads/lecture8/lecture8/cells/TableViewCell.xib; sourceTree = "<group>"; };
-		749E7F8425E24530002C0272 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCell.swift; path = ../../../../../Downloads/lecture8/lecture8/cells/TableViewCell.swift; sourceTree = "<group>"; };
+		749E7F8725E27FE8002C0272 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		749E7F8825E27FE8002C0272 /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
+		749E7F8D25E289F7002C0272 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		749E7F8E25E289F7002C0272 /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
 		A4338BF87FAC45D8E5C8373F /* Pods-Weather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather.release.xcconfig"; path = "Target Support Files/Pods-Weather/Pods-Weather.release.xcconfig"; sourceTree = "<group>"; };
 		CEE49765E2EC7C7351077D8B /* Pods_Weather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2418CF47F74682A18876A29 /* Pods-Weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather.debug.xcconfig"; path = "Target Support Files/Pods-Weather/Pods-Weather.debug.xcconfig"; sourceTree = "<group>"; };
@@ -101,10 +101,10 @@
 		74B0F96E25D67BFA00A46700 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				749E7F8425E24530002C0272 /* TableViewCell.swift */,
-				749E7F8325E24530002C0272 /* TableViewCell.xib */,
-				749E7F8025E24524002C0272 /* CollectionViewCell.swift */,
-				749E7F7F25E24524002C0272 /* CollectionViewCell.xib */,
+				749E7F8725E27FE8002C0272 /* MyCollectionViewCell.swift */,
+				749E7F8825E27FE8002C0272 /* MyCollectionViewCell.xib */,
+				749E7F8D25E289F7002C0272 /* MyTableViewCell.swift */,
+				749E7F8E25E289F7002C0272 /* MyTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -178,9 +178,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7489031A25D3DA27009DB757 /* LaunchScreen.storyboard in Resources */,
-				749E7F8525E24530002C0272 /* TableViewCell.xib in Resources */,
+				749E7F9025E289F7002C0272 /* MyTableViewCell.xib in Resources */,
+				749E7F8A25E27FE8002C0272 /* MyCollectionViewCell.xib in Resources */,
 				7489031725D3DA27009DB757 /* Assets.xcassets in Resources */,
-				749E7F8125E24524002C0272 /* CollectionViewCell.xib in Resources */,
 				7489031525D3DA25009DB757 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,11 +235,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7489032425D3E81E009DB757 /* Model.swift in Sources */,
+				749E7F8F25E289F7002C0272 /* MyTableViewCell.swift in Sources */,
 				7489031225D3DA25009DB757 /* ViewController.swift in Sources */,
-				749E7F8225E24524002C0272 /* CollectionViewCell.swift in Sources */,
+				749E7F8925E27FE8002C0272 /* MyCollectionViewCell.swift in Sources */,
 				7489030E25D3DA25009DB757 /* AppDelegate.swift in Sources */,
 				7489031025D3DA25009DB757 /* SceneDelegate.swift in Sources */,
-				749E7F8625E24530002C0272 /* TableViewCell.swift in Sources */,
 				7489032225D3E7F9009DB757 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

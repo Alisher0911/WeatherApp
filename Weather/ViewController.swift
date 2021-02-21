@@ -36,8 +36,8 @@ class ViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        collectionView.register(CollectionViewCell.nib, forCellWithReuseIdentifier: CollectionViewCell.identifier)
-        tableView.register(TableViewCell.nib, forCellReuseIdentifier: TableViewCell.identifier)
+        collectionView.register(MyCollectionViewCell.nib, forCellWithReuseIdentifier: MyCollectionViewCell.identifier)
+        tableView.register(MyTableViewCell.nib, forCellReuseIdentifier: MyTableViewCell.identifier)
         cityName.text = "Astana"
         fetchData()
     }
@@ -96,7 +96,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //return UITableViewCell()
-        let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCell.identifier, for: indexPath) as! TableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: MyTableViewCell.identifier, for: indexPath) as! MyTableViewCell
         let item = myData?.daily?[indexPath.row]
         cell.day.text = getDayForDate(Date(timeIntervalSince1970: Double(item?.dt ?? 0)))
         cell.temp.text = "\(item?.temp?.day ?? 0.0)"
@@ -123,7 +123,7 @@ extension ViewController: UICollectionViewDataSource{
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCell.identifier, for: indexPath) as! CollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MyCollectionViewCell.identifier, for: indexPath) as! MyCollectionViewCell
         let item = myData?.hourly?[indexPath.item]
         cell.temp.text = "\(item?.temp ?? 0.0)"
         cell.feelsLike.text = "\(item?.feels_like ?? 0.0)"
